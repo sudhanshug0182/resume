@@ -1,0 +1,225 @@
+/* standard widths are: 968, 768, 572 */
+
+@media (max-width:1168px) {
+    .nav-menu ul li a {
+        font-size: 1.25rem;
+    }
+
+    #name {
+        font-size: 4.2em;
+        margin-top: 80px;
+    }
+
+    /* about */
+    #about {
+        height: 76vh;
+    }
+
+    /* skills */
+    #skills {
+        height: 60vh;
+    }
+
+    /* education */
+    #education,
+    #experience {
+        height: 100vh;
+    }
+
+    /* portfolio */
+    .portfolio-img a img {
+        width: 13rem;
+    }
+
+    #contact{
+        height: 80vh;
+    }
+
+
+}
+@media (max-width: 968px){
+    /* education */
+    #education,
+    #experience {
+        height: 110vh;
+    }
+
+    /* portfolio */
+    #portfolio {
+        height: 110vh;
+    }
+    .portfolio-img a img {
+        width: 11.5rem;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .nav-menu ul li a {
+        font-size: 1.2rem;
+    }
+
+    #name {
+        font-size: 4em;
+        margin-top: 80px;
+    }
+
+    .social-icons li a i {
+        font-size: 1.2 rem;
+        padding: 5%;
+    }
+
+    /* about */
+    #about {
+        height: 80vh;
+    }
+
+    /* timeline divider */
+
+    .timeline-divider {
+        left: 5%;
+    }
+
+    .timeline-box {
+        left: 12% !important;
+        width: 80%;
+    }
+
+    .timeline-box:nth-child(2n + 1):after {
+        left: -13.2%;
+    }
+
+    .timeline-box:nth-child(2n):after {
+        left: -13.2%;
+    }
+
+    /* contact */
+    #contact {
+        height: 110vh;
+    }
+    .parent-div {
+        display: block;
+    }
+
+    .textBox {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .div2 {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    #contact .div2 .getInTouch p {
+        width: 100%;
+    }
+
+    #contact-social {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media (max-width: 715px) {
+    nav {
+        justify-content: end;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .nav-menu ul {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        background: white;
+        /* backdrop-filter: blur(100px); */
+        border-radius: 10px;
+        top: 65px;
+        right: 3%;
+        text-align: center;
+        /* transition: all 5s ease-in-out; */
+        /*I'll not be able to apply this property since I'm changing display from none to block*/
+        display: none;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin: 13px;
+    }
+
+    .nav-menu ul li a {
+        font-size: large;
+        color: #2083cf;
+    }
+
+    .nav-menu li a:hover {
+        background: #0082e6;
+        color: white;
+        padding: 6px;
+        border-radius: 17px;
+        transition: .5s;
+    }
+
+    #check:checked~.nav-menu ul {
+        display: block;
+        /*I'll not be able to apply this property since I'm changing display from none to block*/
+
+        /* transition: display 5s ease-in-out; */
+        /* transition-delay: 5s; */
+    }
+
+    #about{
+        height: 85vh;
+    }
+
+    #skills{
+        height: 95vh;
+    }
+
+    .portfolio-img a img {
+        width: 11.7rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:576px) {
+
+    /* arrow  */
+    .back-to-top {
+        height: 1.5rem;
+        width: 1rem;
+        bottom: 1rem;
+        right: 0.6rem;
+    }
+
+    /* about */
+    #about {
+        height: 95vh;
+    }
+
+    /* education */
+    #education,
+    #experience {
+        height: 100vh;
+    }
+
+    /* portfolio */
+    #portfolio {
+        height: 200vh;
+    }
+
+    /* contact  */
+    #contact {
+        height: 115vh;
+    }
+}

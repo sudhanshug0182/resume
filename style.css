@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* nav bar */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;    /*vertical alignment*/
+    flex-direction: row-reverse;
+
+}
+
+.nav-menu ul li{
+    display: inline;
+    margin:1rem;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.nav-menu{
+    margin: 0.8rem 0rem;
+}
+
+.nav-menu li a:hover {
+    background: white;
+    color: #0082e6;
+    padding: 5px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+
+#check{
+    display: none;
+}
+
+
+.checkbtn{
+    margin:1rem 2rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn:hover{
+    scale:1.1;
+    transition: 0.5s;
+
+}
+
+/* Name and Social Icons*/
+
+#bodyHeader{
+    background-image:url(https://www.visualcv.com/static/7d0495245d23f8a38ee98d120af3e552/fe076/pattern-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height:65vh;
+    opacity: 0.8;
+    padding-top:0.2rem ;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#name{
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 100;
+    font-size: 4.5rem;
+    margin-top: 6rem;
+}
+
+/* social-icons */
+.social-icons li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.social-icons li a i {
+    padding: 5px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    color: white;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/* back-to-top */
+/* html{
+    scroll-behavior: smooth;
+} */
+.back-to-top{
+    position: fixed;
+    bottom:2rem;
+    right:2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content:center ;
+    background-color: #0082e6;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    text-decoration: none;
+    transition: 0.2 ease-out;
+    width: 1.5rem;
+}
+
+.back-to-top:hover{
+    background-color:#056ebefd;
+}
+
+.back-to-top span{
+    color:white;
+    font-size: 1.5rem;
+    transition: 0.2 ease-out;
+}
+.back-to-top:hover span{
+    transform: translateY(-2px);
+}
+
+
+
+/*Section Classes*/
+
+section {
+    width: 100%;
+    /* height:75vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: white;
+}
+
+section:nth-child(2n+1) {
+    background-color: #9e9b9b29;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+#about {
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+    text-align: center;
+    height: 68vh;
+}
+
+#image {
+    width: 100%;
+    /* height: 100%; */
+    margin-top: -15vh;
+    text-align: center;
+}
+
+#image img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 6px 4px lightgrey;
+}
+
+#about p {
+    width: 70vw;
+    height: auto;
+    /* margin: auto; */
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+#about p i {
+    font-family:'satisfy',cursive ;
+    font-weight: 500;
+    font-size: larger;
+    color: black;
+}
+#about p b {
+    color: #2857a4;
+}
+
+#about input[type="submit"]{
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 8.8px;
+    background-color: rgba(0, 106, 255, 0.901);
+    color: white;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+#about input[type="submit"]:hover{
+    
+    box-shadow: 0px 0px 6px 4px rgba(15, 14, 14, 0.3);
+    font-weight: 500;
+    scale: 1.03;
+}
+
+.download-btn{
+    background-color: DodgerBlue;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius:20px;
+    margin-top: 3rem;
+}
+
+.download-btn:hover {
+    background-color: RoyalBlue;
+    /* box-shadow: 0px 0px 6px 4px rgba(15, 14, 14, 0.3); */
+    font-weight: 500;
+    scale: 1.03;
+  }
+
+
+/*Skills Section*/
+#skills{
+    height: 55vh;
+}
+
+.skills-display {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-progress {
+    width: 10rem;
+    height: 1.9rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    margin: 20px;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name {
+    padding-top: 3px;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/*Percentage Classes */
+
+.eighty-percent {
+    width: 80%;
+    height: inherit;
+}
+.seventy-five-percent {
+    width: 75%;
+    height: inherit;
+}
+.sixty-five-percent {
+    width: 65%;
+    height: inherit;
+}
+.fourty-percent {
+    width: 40%;
+    height: inherit;
+}
+.twenty-percent {
+    width: 20%;
+    height: inherit;
+}
+
+  /* color class */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+.mb-orange {
+    background-color: #ff7a05;
+}
+.mb-green {
+    background-color: #79f605;
+}
+.mb-yellow {
+    background-color: #cdd924;
+}
+.mb-red {
+    background-color: red;
+}
+.mb-deepgreen {
+    background-color: rgb(2, 76, 17);
+}
+
+/* education */
+
+#education {
+    height: 90vh;
+    color: lightslategray;
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    /* border:2px solid red; */
+    margin-top: -1%;
+}
+
+.timeline-box {
+    position: relative;
+    margin: 0.6rem;
+    width: 40%;
+    left: 5%;
+    min-height: 110px;
+    /* border: 1px solid black; */
+}
+#degree {
+    color: darkblue;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#inst-name {
+    font-size: large;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    color: orange;
+    margin-top: 0.5%;
+    letter-spacing: 0.1rem;
+}
+
+#period {
+    color: grey;
+    margin-top: 0.5%;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+#descrip {
+    text-align: justify;
+    margin-top: 0.5rem;
+}
+.timeline-box:nth-child(2n + 1) {
+    text-align: right;
+}
+
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n + 1):after {
+    content: "";
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: slategrey;
+    position: absolute;
+    top: 32%;
+    right: -11.4%;
+}
+
+.timeline-box:nth-child(2n):after {
+    content: "";
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: slategrey;
+    position: absolute;
+    top: 32%;
+    left: -11%;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 65%;
+    width: 0;
+    border: 1.5px dashed #0096fa6b;
+    top: 12%;
+    left: 49.8%;
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 20%;
+    transform: rotate(90deg);
+    font-size: 1.8rem;
+    color: darkblue;
+}
+
+
+/* portfolio */
+
+#portfolio {
+    height: 95vh;
+}
+
+.portfolio-container {
+    width: 76vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -2rem;
+}
+
+.portfolio-img a img {
+    width: 16rem;
+}
+
+.portfolio-img {
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    margin:1rem;
+}
+
+.portfolio-img::after {
+    content: "Basic details about my project";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s ease-in-out 0.1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.portfolio-img:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-img:hover::after {
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+    background: rgba(168, 163, 163, 0.8);
+    /* box-shadow: 0px 0px 6px 4px rgba(27, 26, 26, 0.3); */
+}
+
+
+/* experience */
+
+#experience {
+    color: lightslategray;
+    height: 90vh;
+}
+
+/* contact */
+
+#contact {
+    background: linear-gradient(90deg, #2857a4, #403066);
+    box-sizing: border-box;
+    /* width: 100vw; */
+    font-size: 3rem;
+    height: 70vh;
+}
+
+#contact span {
+    color: white;
+}
+
+.parent-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0.5em;
+}
+
+.textBox {
+    width: 35%;
+    margin-left: 2.5em;
+}
+
+.textBox input {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    /* color: rgb(17, 16, 16); */
+    font-family: sans-serif;
+    outline: none;
+}
+
+.textBox textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    outline: none;
+    color: white;
+}
+
+input[type="text"] {
+    color: white;
+}
+
+input::placeholder {
+    color: lightgray;
+}
+
+textarea::placeholder {
+    color: lightgray;
+}
+
+input[type="submit"] {
+    border: 2px solid white;
+    width: 130px;
+    padding:7px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 2rem;
+    /* border-radius: 15px; */
+    
+}
+
+input[type="submit"]:hover {
+    /* box-shadow: 0px 0px 6px 4px rgba(15, 14, 14, 0.3); */
+    background-color: white;
+    color:#055b9ce9;
+    font-weight: 600;
+}
+
+.div2 {
+    width: 40%;
+    /* margin-top: -1em; */
+    margin-right: 3em;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.div2 p {
+    font-size: 0.8rem;
+    color: lightgray;
+    width: 90%;
+    margin-top: 0.6em;
+}
+
+.my-address {
+    margin-top:2em ;
+}
+
+.my-address p{
+    margin-top:0.6em ;
+}
+
+.my-address p a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.my-address i {
+    margin-right: 0.5rem;
+}
+
+#contact-social {
+    margin-top: 50px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
